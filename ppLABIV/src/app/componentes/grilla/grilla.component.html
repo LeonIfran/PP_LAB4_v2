@@ -1,0 +1,25 @@
+<table border="2">
+  <thead>
+    <th>id</th>
+    <th>Modelo</th>
+    <th>Marca</th>
+    <th>Precio</th>
+    <th>Nro Puertas</th>
+    <th>Foto</th>
+    <th>Accion</th>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let item of lista">
+      <!-- contenedor especial de angular, no afectara los estilos -->
+      <tr>
+          <td>{{ item.id }}</td>
+          <td>{{ item.modelo }}</td>
+          <td>{{ item.marca }}</td>
+          <td>{{ item.precio }}</td>
+          <td>{{ item.cantidadPuertas }}</td>
+          <td><img [src]="item.RutaDeFoto" class="fotoDeAuto"></td>
+          <td><!-- pLACEHOLDER BOTon borrado --></td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
