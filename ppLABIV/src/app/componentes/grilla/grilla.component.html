@@ -18,7 +18,7 @@
           <td>{{ item.precio }}</td>
           <td>{{ item.cantidadPuertas }}</td>
           <td><img [src]="item.RutaDeFoto" class="fotoDeAuto"></td>
-          <td><!-- pLACEHOLDER BOTon borrado --></td>
+          <td><app-boton-delete (borrar)="RecargarGrilla($event)" [idAuto]="item.id"></app-boton-delete></td>
       </tr>
     </ng-container>
   </tbody>
